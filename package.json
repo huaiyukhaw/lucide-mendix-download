@@ -1,6 +1,6 @@
 {
   "name": "lucide-mendix",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Downloads lucide.ttf and generates a Mendix icon import file",
   "dependencies": {
     "adm-zip": "^0.5.16"
