@@ -9,7 +9,7 @@ const tempDir = path.join(os.tmpdir(), 'lucide-mendix-' + Date.now());
 
 try {
   console.log('Cloning lucide (sparse, depth=1)...');
-  execSync(`git clone --filter=blob:none --sparse --depth=1 ${REPO} "${tempDir}"`, { stdio: 'inherit' });
+  execSync(`git clone --sparse --depth=1 ${REPO} "${tempDir}"`, { stdio: 'inherit' });
   execSync(`git -C "${tempDir}" sparse-checkout set lucide-font icons`, { stdio: 'inherit' });
 
   console.log('\nGenerating lucide-mendix-import.txt...');
